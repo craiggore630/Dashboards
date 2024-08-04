@@ -5,7 +5,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 import country_converter as coco
 import State_to_Abbrev as states
-from datetime import timedelta
+from datetime import timedelta, datetime
 
 def load_data(view, selected_data, start_date, end_date):
     start_date = datetime.strptime(start_date, '%Y-%m-%d').date()
